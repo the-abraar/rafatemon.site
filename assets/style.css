@@ -35,7 +35,6 @@ nav a.pill:hover{filter:brightness(1.06)}
 .hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;right:-8%;bottom:-18%;width:min(560px,80vw);aspect-ratio:1;background:url(img/contour.svg) no-repeat center/contain;opacity:.9;pointer-events:none;z-index:0}
 .hero>*{position:relative;z-index:1}
-.tag{background:var(--surface);color:var(--accent);font-weight:800;padding:6px 14px;border-radius:8px;box-shadow:3px 4px 0 rgba(0,0,0,.18);margin-bottom:2rem;font-size:1.05rem}
 h1{font-size:clamp(3rem,10vw,7rem);font-weight:800;letter-spacing:-.04em}
 .role{font-size:clamp(1.1rem,2.4vw,1.5rem);font-weight:500;margin:.4rem 0 1rem}
 .lede{max-width:34rem;color:var(--muted);margin:0 0 2.2rem}
