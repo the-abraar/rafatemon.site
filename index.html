@@ -17,53 +17,47 @@
 <body>
 <a class="skip" href="#work">Skip to work</a>
 
-<header class="nav" id="top">
-  <a class="brand" href="#top">Rafat Emon</a>
-  <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
-  <nav id="menu">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#work">Work</a>
-    <a href="#contact" class="pill">Contact</a>
-  </nav>
+<div class="layout">
+<header class="side" id="top">
+  <div>
+    <figure class="portrait"><img src="assets/img/portrait.jpg" alt="Portrait of Rafat Emon" fetchpriority="high" width="600" height="600"></figure>
+    <h1><a href="#top">Rafat Emon</a></h1>
+    <p class="role">Film &amp; Video Editor</p>
+    <p class="lede">Documentaries, commercials and digital stories — cut with curiosity, rhythm and care.</p>
+    <p class="edu">BSS in Television, Film and Photography<br>University of Dhaka · 2021–2026</p>
+    <nav id="menu" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="ctas">
+    <a class="cta" href="#work">See selected work <span aria-hidden="true">↓</span></a>
+    <a class="cta ghost" href="Portfolio%20of%20Rafat%20Emon.pdf" download>Download Portfolio</a>
+  </div>
 </header>
 
 <main>
-  <section class="hero">
-    <h1>Rafat Emon</h1>
-    <p class="role">Film &amp; Video Editor</p>
-    <div class="edu edu-hero">
-      <span class="edu-label">Education</span>
-      <h3>Bachelor of Social Science (BSS)</h3>
-      <p>in Television, Film and Photography</p>
-      <p class="edu-uni">University of Dhaka <time>2021–2026</time></p>
-    </div>
-    <p class="lede">Documentaries, commercials and digital stories — cut with curiosity, rhythm and care.</p>
+  <section class="intro reveal">
     <div class="stats" aria-label="Highlights">
       <div><strong>19.2M</strong><span>combined views, Airtel “First Year 101” series</span></div>
       <div><strong>Best Content</strong><span>Life Insurance Summit 2024</span></div>
       <div><strong>ATN Bangla</strong><span>featured broadcast cut of a Sonali Life episode</span></div>
     </div>
-    <div class="ctas">
-      <a class="cta" href="#work">See selected work <span aria-hidden="true">↓</span></a>
-      <a class="cta ghost" href="Portfolio%20of%20Rafat%20Emon.pdf" download>Download Portfolio</a>
-    </div>
   </section>
 
   <section id="about" class="about reveal">
-    <figure class="portrait"><img src="assets/img/portrait.jpg" alt="Portrait of Rafat Emon" width="600" height="600"></figure>
-    <div>
       <h2>About me</h2>
       <p>Growing up, I was always a curious kid. My brother’s camera became the perfect outlet for that curiosity. I picked it up, learned how it worked, and photography quickly became a hobby. Through the lens, I learned to observe — to notice details, expressions, and emotions, and to tell stories through still images.</p>
       <p>That curiosity eventually led me to cinema. By the time I entered university, I had already watched hundreds of films, fascinated by the worlds they created and the ways they could make us feel and think. So when I got the opportunity to study film formally, I took it.</p>
       <p>I completed my Bachelor’s degree, majoring in Film, at the Department of Television, Film and Photography, University of Dhaka. University gave me a strong foundation in visual storytelling, but I wanted to understand what happens beyond the screen — to experience the process of bringing ideas to life and to learn by doing. Once again, curiosity pushed me forward. I joined a production house as an Assistant Director, gaining hands-on experience on professional productions and learning how different creative and technical departments come together to build a story.</p>
       <p>Since then, I have worked across short films, television productions, documentaries, branded content, and humanitarian storytelling, collaborating with diverse teams, audiences, and institutions.</p>
       <p class="accent">At the core of it all, I am still driven by the same curiosity that first drew me to a camera: to observe, to understand, and to find better ways of telling stories.</p>
-    </div>
   </section>
 
   <section id="experience" class="reveal">
-    <h2>Experience, tools &amp; education</h2>
+    <h2>Experience &amp; tools</h2>
     <div class="exp-grid">
       <ol class="timeline">
         <li><h3>Content Creator &amp; Video Editor</h3><p><a href="https://www.facebook.com/profile.php?id=61579430784904" target="_blank" rel="noopener">Blue Ocean Digital</a><time>Jan 2026 – Jun 2026</time></p></li>
@@ -92,7 +86,7 @@
     <blockquote>I believe editing is more than assembling images and sound. It is where a story finds its rhythm, voice, and meaning. An editor can reshape a piece, elevate what is already there, and sometimes discover a narrative that was hidden within the footage.</blockquote>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contact" class="contact reveal">
     <div class="contact-inner">
       <h2>Contact</h2>
       <p>Whether it’s a new project, a collaboration, or just a conversation about film; I would love to hear from you.</p>
@@ -103,9 +97,9 @@
       </ul>
     </div>
   </section>
+  <footer><span>© <span id="yr">2026</span> Rafat Emon</span><a href="#top">Back to top ↑</a></footer>
 </main>
-
-<footer><span>© <span id="yr">2026</span> Rafat Emon</span><a href="#top">Back to top ↑</a></footer>
+</div>
 <script src="assets/script.js"></script>
 </body>
 </html>

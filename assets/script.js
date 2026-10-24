@@ -59,14 +59,15 @@
   tabs.addEventListener("click", e => { const b = e.target.closest("button"); if (b) show(b.dataset.c); });
   show(current);
 
-  // nav
-  const nav = document.querySelector(".nav"), btn = document.querySelector(".menu-btn"), menu = document.getElementById("menu");
-  addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 10), { passive: true });
-  btn.addEventListener("click", () => { const o = menu.classList.toggle("open"); btn.setAttribute("aria-expanded", o); });
-  menu.addEventListener("click", e => { if (e.target.closest("a")) { menu.classList.remove("open"); btn.setAttribute("aria-expanded", false); } });
-
   // reveal on scroll
   const io = "IntersectionObserver" in window && new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .08 });
   document.querySelectorAll(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+
+  // highlight the menu link of the section crossing the middle of the screen
+  const links = document.querySelectorAll("#menu a");
+  const spy = io && new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) links.forEach(a => a.classList.toggle("active", a.hash === "#" + e.target.id));
+  }), { rootMargin: "-45% 0px -50% 0px" });
+  links.forEach(a => spy && spy.observe(document.querySelector(a.hash)));
   document.getElementById("yr").textContent = new Date().getFullYear();
 })();
