@@ -1,6 +1,6 @@
 :root{
   --bg:#eeeeee; --surface:#ffffff; --ink:#0b0b0b; --muted:#666; --line:#d9d9d9;
-  --accent:#ff6b3d; --accent-ink:#c2410c; --link:#6d28d9; --radius:14px;
+  --accent:#ff6b3d; --accent-ink:#b93d0b; --link:#6d28d9; --radius:14px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){--bg:#111; --surface:#1b1b1b; --ink:#f3f3f3; --muted:#a0a0a0; --line:#2c2c2c; --accent-ink:#ff8a63; --link:#b39bff}
